@@ -1,0 +1,96 @@
+<html>
+
+<head>
+    <title>Form</title>
+
+<body>
+    <form style="background-color:grey">
+        <fieldset>
+            <legend>Presonal Details</legend>
+
+            <label for="name">Enter your name:</label>
+            <input type="text" id="name" placeholder="Enter your name"><br><br>
+            <label for="name">Enter your last name :</label>
+            <input type="text" id="name" placeholder="Enter your last name" readonly value="MEHTA"><br>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" maxlength="8" placeholder="Enter password" required><br><br>
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" placeholder="Enter your email"><br><br>
+            <label for="number">Enter your number:</label>
+            <input type="number" id="number" placeholder="Enter your number"><br><br>
+            <label for="date">Enter your DOB:</label>
+            <input type="date" id="date" min="1999-01-01" max="2050-01-01"><br><br>
+            <label for="Address">Address:</label>
+            <input type="text" id="Address" size="50"><br><br>
+            <p>please select your gender:</p>
+            <label for="Male">Male</label>
+            <input type="radio" id="Male" name="Gender"><br>
+            <label for="Female">Female</label>
+            <input type="radio" id="Female" name="Gender"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Educational Details</legend>
+            <label for="collage">Enter collage name</label>
+            <input type="text">
+        </fieldset>
+        <label for="file">Select your file:</label>
+        <input type="file" id="file" multiple><br><br>
+        <label for="URL">Enter URL:</label>
+        <input type="url" id="URL" placeholder="url"><br><br>
+
+        <lable for="checkbox">condition accepted</lable>
+        <input type="checkbox" name="check"><br>
+        <lable for="checkbox">Are you eligible</lable>
+        <input type="checkbox" id="checkbox" name="check"><br>
+        <label for="Vehicle">Please select your Vehicle</label>
+        <select size="3" id="Vehicle">
+            <option>car</option>
+            <option>bike</option>
+            <option>cycle</option>
+            <option disabled>Bus</option>
+
+        </select><br><br>
+        <label for="pc">Select your pc:</label>
+        <input list="pc">
+        <datalist id="pc">
+            <option value="mac"></option>
+            <option value="hp"></option>
+            <option value="dell"></option>
+            <option value="lenovo"></option>
+            <option value="acer"></option> 
+            
+            
+
+        </datalist><br><br>
+        <label for="time">Select Time:</label>
+        <Input type="time" id="time">
+        <br><br>
+        <label for="datetime">Select date and time</label>
+
+
+        <input type="datetime-local"><br>
+        <label for="tel">Select patterned digit</label>
+        <input type="tel" pattern="[8-9]{3}-[0-9]{7}" id="tel"><br><br>
+        <label for="textarea">Write about yourself:</label><br>
+        <textarea rows="10" cols="20" id="textarea"></textarea><br><br>
+
+
+
+
+        <input type="image"
+            src="https://images.thrillophilia.com/image/upload/s--aT91QNX5--/c_fill,g_auto,h_600,q_auto,w_975/f_auto,fl_strip_profile/v1/images/photos/000/013/602/original/1471702122_jaipur.jpg.jpg"
+            height="100" width="100"><br>
+
+
+        <!-- image act as submit button -->
+
+
+        <!-- <input type="submit" value="Login"> -->
+        <!-- <input type="button" value="Stop now" style="background-color: red;" > -->
+
+    </form>
+</body>
+</head>
+
+</html>
