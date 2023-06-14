@@ -4,111 +4,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sales</title>
+    <title>Product-card</title>
     <style>
-        .watch {
-            text-align: center;
+        .product-card {
+            width: 33.3333%;
+        }
+
+        .camera {
             width: 300px;
-            background-color: cornflowerblue;
-            float: left;
-            margin: 5px;
-        
-
-        }
-
-
-        .strawberries {
+            background-color: black;
             text-align: center;
-            background-color: pink;
-            width: 300px;
+            border: palevioletred solid 50px;
             float: left;
-            margin: 5px;
+            margin: 30px;
+            box-shadow: 5px 7px black;
+            padding: 7px;
+         
+
         }
-
-       
-
-        .T-shirt {
+        .headphone{
             width: 300px;
-            background-color: White;
+            background-color: black;
             text-align: center;
-            border: 50px rgba(238, 179, 0, 0.768) solid;
+            border:grey solid 50px;
             float: left;
-            margin: 5px;
+            margin: 30px;
+            box-shadow: 5px 7px black;
+            padding: 7px;
+        }
+        .phone{
+            text-align: center;
+            margin: 30px;
+            background-color: darkturquoise;
+            width: 300px;
+            border: 50px crimson solid;
+            float: left;
+            box-shadow: 5px 7px grey;
+            padding: 7px;
+        }
 
+        h1,
+        p,
+        h2,
+        h4,h5 {
+            color: whitesmoke;
         }
-        .product{
-            width: 42%;
-             /* float: left; */
-        }
-       
-       
     </style>
 </head>
 
-<body>
-<div class="product">
-    <div class="watch">
+<body style="background-color:lightblue;">
 
-        <img src="images/watch.jpg" alt="Apple watch"><br>
+    <h3 style="color: black;">Electronics Gadgets...</h3>
+    <div class="Product-card">
+        <div class="camera">
+            <img src="images/Camera.jpg" alt="Camera">
+            <a type="text">
+                <h1>Canon</h1>
+                <h2>$100</h2>
+            </a>
+            <p>A camera that puts a world of possibilities at your fingertips. Literally.</p>
+            <h4>Colour</h4>
+            <label for="color" style="color: white;">Red</label>
+            <input type="radio" id="color" name="color" style="border: red 5px solid;">
+            <label for="color" style="color: white;">black</label>
+            <input type="radio" name="color">
+            <label for="color" style="color: white;">Maroon</label>
+            <input type="radio" name="color"><br>
+            <button style="border: red double 5px;">BUY NOW</button><br>
+            <button style="border: blue double 5px;">ADD TO CART</button><br>
+            <a href="https://www.google.com/" target="_blank" style="text-align: end; font-size: 10px;color: skyblue;">
+                READ REVIEWS
+            </a>
+        </div>
+        <div class="headphone">
+            <img src="images/headphone.jpg" alt="Zebronics head phone">
+            <h5 style="text-align: left;">$100</h5>
+            <h4 style="text-align: left;">Zebronics headphone</h4>
+            <p>Exhale your worries while inhaling the music.  <br>        
+            <br>A portable headphone with a bettery life of 20 hours and lp67 rating. Comes with a 3 years warranty. 
+            </p>
+            <h4 style="color: darkgoldenrod;">Colour :</h4>
+            <label for="color" style="color: white;">Red</label>
+            <input type="radio" id="color" name="color" style="border: red 5px solid;">
+            <label for="color" style="color: white;">black</label>
+            <input type="radio" name="color">
+            <label for="color" style="color: white;">Maroon</label>
+            <input type="radio" name="color"><br>
+            <button style="border: red double 5px;">BUY NOW</button><br>
+            <button style="border: blue double 5px;">ADD TO CART</button><br>
+            <a href="https://www.google.com/" target="_blank" style="text-align: end; font-size: 10px;color: skyblue;">
+                READ REVIEWS
+            </a>
 
-        <h1 style="text-shadow: 5px 7px burlywood;">Apple watch</h1>
-        <p style="font-size: 25px;"> A lot more watch for your money</p>
-        <button style="background-color: red; border: double; font-size: 30px;color: floralwhite;">BUY NOW</button>
+        </div>
+        <div class="phone">
+            <img src="images/iphone.jpg" alt="Phone">
+            <h1 style="text-align: left;">$1000</h1>
+            <h2 style="text-align: center;">I-phone</h2>
+            <p style="font-size: 20px;">One call fix up your problems.
+                <br>
+                Smart enough to know better, tough enough to do better.
+            </p>
+            <h4 style="color: darkgoldenrod;">Colour :</h4>
+            <label for="color" style="color: white;">Red</label>
+            <input type="radio" id="color" name="color" style="border: red 5px solid;">
+            <label for="color" style="color: white;">black</label>
+            <input type="radio" name="color">
+            <label for="color" style="color: white;">Maroon</label>
+            <input type="radio" name="color"><br>
+            <button style="border: red double 5px;">BUY NOW</button><br>
+            <button style="border: blue double 5px;">ADD TO CART</button><br>
+            <a href="https://www.google.com/" target="_blank" style="text-align: end; font-size: 10px;color: black;">
+                READ REVIEWS
+            </a>
+        </div>
     </div>
 
-    <div class="strawberries">
-        <img src="images/stroberi.jpg" width="150px" height="150px" alt="stroberi" style="border-radius:0px 50% ;">
-        <h1 style="font-size: 30px;background-color: crimson;color: rgb(222, 96, 138);">Strawberries</h1>
-        <h2>$10 Per Kg</h2>
-        <h2>Pick A Berry And Be Merry.</h2>
-        <label for="qty">Quntaty required</label>
-        <input type="number" id="qty" max="10" min="0" style="font-size: 30px;"><br><br>
-        <button style="border-radius: 100px; font-size: 20px;">BUY NOW</button><br>
-        <button style="border-radius: 100px; font-size: 20px;">ADD TO CART </button>
-    </div>
-
-
-    <div class="T-shirt">
-        <img src="images/T-shirt.jpg" alt="T-Shirt" style="border:chartreuse solid 7px; border-radius: 0px 20%;">
-        <h1
-            style="color: rgb(221, 7, 96); text-align: left;font-size: 30px;text-align: center; text-shadow:5px 7px rgb(240, 228, 0);text-decoration: underline;">
-            Hammitt T-Shirt </h1>
-        <h1 style="color: rgba(0, 17, 255, 0.936);">$29.99</h1>
-        <h3>Man's running t-shirt</h3>
-        <label for="Size">Size</label>
-        <select id="Size" style="font-size: 25px;">
-            <option>XS</option>
-            <option>S</option>
-            <option>M</option>
-            <option>L</option>
-            <option>XL</option>
-
-        </select>
-        <!-- <label for="Colour">Colour</label>
-        <select id="Colour" style="font-size: 25px;">
-            <option>Yellow</option>
-            <option>Black</option>
-            <option>White</option>
-            
-
-        </select><br> -->
-        <label for="color">Colour</label>
-
-        <button style="background-color: yellow;">yellow</button>
-        <button style="background-color: white;">white</button>
-        <button style="background-color: black; color: white;">Black</button>
-
-
-        <button style=" background-color: yellow;border: double;color: red;font-size: 20px;">BUY NOW</button>
-        <button style="font-size: 20px;">ADD TO CART</button>
-
-
-    </div>
-</div>
-    <br>
-   
-       
-    
 </body>
-
 </html>
